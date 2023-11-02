@@ -28,7 +28,7 @@ Finally you can deploy all the stacks:
 cdk deploy --all
 ```
 
-## Data Producers examples 
+## Data Producers 
 
 In the context of Garnet, Data producers are components that ingest data from a data source and convert it into NGSI-LD entities before pushing them to Garnet. 
 
@@ -59,7 +59,7 @@ We provide ready-to-use stacks for a [list](/lib/stacks/garnet-dp-stacks/garnet-
 - Indoor Environment Monitoring using [Elsys ERS Sound](https://www.elsys.se/en/ers-sound/). The sensor measures illuminance, noise level, temperature and relative humidity.
 - Indoor Environment Monitoring using [SenseCAP S2103](https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html). The sensor measures co2, temperature and relative humidity.
 
-## Data Consumer examples 
+## Data Consumers
 
 Garnet offers multiple ways to consume the data. You can use the Garnet API to [query the FIWARE Context Broker](https://garnet-framework.dev/docs/how/context-broker#query-entities) and the [Garnet IoT Registry](https://garnet-framework.dev/docs/how/garnet-iot#query-a-thing). You can build an API to query the Garnet Data Lake for historical data. You can also subscribe to all changes of named shadows making it easier to build real-time applications.
 
