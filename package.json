@@ -8,7 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "preinstall": "node install.js"
   },
   "devDependencies": {
     "@types/jest": "^29.5.5",
