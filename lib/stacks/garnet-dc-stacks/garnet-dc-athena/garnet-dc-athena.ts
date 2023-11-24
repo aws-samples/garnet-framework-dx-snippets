@@ -14,7 +14,7 @@ export class GarnetDcAthenaStack extends Stack {
       super(scope, id, props)
 
       const table_name = props.type.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()
-      const glue_table = new CfnTable(this, 'StfTable', {
+      const glue_table = new CfnTable(this, `GarnetTable${table_name}`, {
         catalogId: Aws.ACCOUNT_ID, 
         databaseName: athena_constant.garnetAthenadatabaseName,
         tableInput: {
